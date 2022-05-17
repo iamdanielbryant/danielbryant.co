@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>daniel bryant >: home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <style type="text/css">
+
+            body{
+                padding: 0;
+                margin:0;
+
+                background-color: #e0e0e0;
+                font-family: 'Roboto', sans-serif;
+            }
+            h1{
+                font-family: 'Koulen', cursive;
+                letter-spacing: 5px;
+                text-align: right;
+                font-size: 37px;
+                color: white;
+            }
+            summary{
+                font-size: 22px;
+                text-align: right;
+                color: gray;
+                padding: 0;
+                margin:-30px 5px 0 0 ;
+            }
+            .container{
+                display: grid;
+                grid-gap: 15px;
+                grid-template-columns: repeat(2,auto);
+                grid-auto-rows: minmax(50px, auto);
+                width: 100vw;
+                
+            }
+            .sidebar{
+                width: 100%;
+                color: #b5b5b5;
+                display: grid;
+                height: 100vh;
+            }
+            .sb_content{
+                padding: 20px 20px 20px 20px;
+                background-color: #48515a;
+
+            }
+            .sb_content ol{
+                list-style: none;
+                text-align: right;
+                padding-inline-start: 0px;
+            }
+            .sb_content li{
+                padding: 10px 0px 10px 10px;
+                margin: 10px 0px;
+            }
+            .sb_content li a{
+                color: white;
+                text-decoration: none;
+                background-color: #363d44;
+                font-size: 18px;
+                padding: 10px;
+            }
+            .sidebar li a:hover{
+                background-color: black;
+            }
+            .content{
+                padding: 50px 20px 20px 20px;
+                background-color: #e0e0e0;
+                max-width: 800px;
+            }
+            .content h2{
+                font-size: 3em;
+                margin: 0;
+            }
+
+            @media only screen and (max-width: 800px) {
+                .container{
+                    display: block;
+                    grid-gap: 0;
+                }
+                .sidebar{
+                    height: 100%;
+                }
+                .sb_content h1{
+                    text-align: center;
+                }
+                .sb_content summary{
+                    text-align: center;
+                }
+                .sb_content ol{
+                    text-align: center;
+                }
+                .sb_content li{
+                padding: 10px;
+                margin: 10px 0px;
+            }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <div class="sb_content">
+                    <h1>DANIEL BRYANT</h1>
+                    <summary>Software Engineer</summary>
+                    <ol>
+                        <li><a href="#">Start Here</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="content">
+                <h2>
+                    Hello there!
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed velit vitae ex vehicula sagittis vehicula luctus enim. Nam sodales velit ac orci mattis fringilla. Donec quis est ex. Nullam dignissim varius rhoncus. Donec eget sapien nec augue egestas egestas. Aliquam cursus est a gravida aliquam. Suspendisse consectetur iaculis risus. Curabitur ultrices condimentum facilisis. Quisque ut finibus quam. Nulla facilisi. Donec imperdiet laoreet sem, eget posuere urna mollis in.
+                </p>
+                <p>
+                    Cras quis pharetra tortor. Phasellus viverra, nibh cursus eleifend eleifend, nisi ipsum tempus nibh, eget convallis nunc dolor maximus odio. Vivamus in tempus risus. Aliquam lacinia nunc sed nibh rhoncus, nec consequat libero lacinia. Duis facilisis neque ut sagittis luctus. Quisque eu pretium lectus. Donec vehicula tempor ante a sagittis. Sed lacinia efficitur risus quis malesuada. Vestibulum efficitur tellus quis nisi aliquet facilisis. Donec finibus sagittis sapien, a blandit tortor egestas quis. In a risus porta, lobortis nisl quis, condimentum tellus.
+                </p>
+                <p>
+                    Morbi euismod enim nec velit cursus eleifend. Duis quis aliquam ante. Nullam eget ornare metus, ut commodo sapien. Proin sed ex sodales, luctus dui ut, pellentesque justo. Nam id finibus dolor. Duis sed mattis leo. Integer aliquam eros sit amet augue volutpat, ac placerat velit feugiat. Aliquam non dolor hendrerit, convallis eros vitae, lacinia enim. Suspendisse potenti. Phasellus viverra aliquet mauris. Vivamus in tincidunt sem. Donec pharetra odio a faucibus consectetur. Vestibulum rutrum lorem eget est egestas vehicula at ac mi. Aliquam sed suscipit sapien.
+    
+                </p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script type="text/javascript" src="./content.js"></script>
+    </body>
+</html>
